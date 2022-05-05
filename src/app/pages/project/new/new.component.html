@@ -1,17 +1,17 @@
-<div fxLayout="column" fxLayoutAlign="center" style="margin-top:100px">
+<div fxLayout="column" fxLayoutAlign="center">
     <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
       <div fxLayoutAlign="center">
         <mat-form-field style="width:50%" appearance="fill">
-          <mat-label>Enter username</mat-label>
-          <input formControlName="username" matInput>
-          <mat-error *ngIf="form.controls['username'].invalid">Please enter a valid username</mat-error>
+          <mat-label>Project Name</mat-label>
+          <input formControlName="name" matInput>
+          <mat-error *ngIf="form.controls['name'].invalid">Please enter a valid project name.</mat-error>
         </mat-form-field>
       </div>
       <div fxLayoutAlign="center" style="margin-top:10px">
         <mat-form-field style="width:50%" appearance="fill">
-          <mat-label>Enter password</mat-label>
-          <input type="password" formControlName="password" matInput>
-          <mat-error *ngIf="form.controls['password'].invalid">Please enter a valid password</mat-error>
+          <mat-label>Description</mat-label>
+          <textarea formControlName="description" matInput></textarea>
+          <mat-error *ngIf="form.controls['description'].invalid">Please enter a description</mat-error>
         </mat-form-field>
       </div>
       <div fxLayoutAlign="center" style="margin-top:20px">
