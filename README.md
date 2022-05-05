@@ -1,6 +1,23 @@
-# Maikr
+# Maikr (Beta)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+Maikr is a completely open source multi-fasceted project management tool intended to be a dashboard for your life!
+
+Please contribute!
+
+Spin up a development server to see what we're all about.
+
+## About the name
+
+- Easy to remember
+- Not likely confused with other projects
+- Represents the simplicity of creation and contribution
+- Invites criticism (Suggest better name?)
+## Goals
+
+- Make YOUR ideas REAL!!!
+- Iterate on project management
+- Pull in as much input as possible
+- Make everything easier!!!
 
 ## Development server
 
