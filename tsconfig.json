@@ -23,9 +23,9 @@
       "dom"
     ],
     "paths": {
-      "@models": ["src/app/models"],
-      "@pages": ["src/app/pages"],
-      "@services": ["src/app/services"]
+      "@models/*": ["src/app/models/*"],
+      "@pages/*": ["src/app/pages/*"],
+      "@services/*": ["src/app/services/*"]
     }
   },
   "angularCompilerOptions": {
