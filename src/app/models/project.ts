@@ -1,4 +1,7 @@
+import { Model, Field } from '@decorators/maikr-forms';
+
+@Model()
 export class Project {
-    name: string = "";
-    description: string = "";
+    @Field() name: string = "";
+    @Field() description: string = "";
 }

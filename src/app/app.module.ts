@@ -8,15 +8,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProjectComponent } from '@pages/project/project.component';
-import { NewComponent } from './pages/project/new/new.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProjectComponent } from './pages/project/project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectComponent,
-    NewComponent
   ],
   imports: [
     BrowserModule,
