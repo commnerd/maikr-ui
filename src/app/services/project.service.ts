@@ -15,9 +15,9 @@ export class ProjectService {
 
   async save(project: Project): Promise<Project> {
     let instance = this.ngForageFactory.getInstance({});
-    let length = await instance.length();
-    console.log(project);
-    let savedProject = await instance.setItem<Project>(length.toString(), project);
+    let projectIndex = await instance.getItem("project_index") as unknown as number || 0;
+    let savedProject = await instance.setItem<Project>("project_" + projectIndex.toString(), project);
+    await instance.setItem<number>("project_index", projectIndex + 1);
     return savedProject;
   }
 
