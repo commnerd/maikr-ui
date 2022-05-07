@@ -13,11 +13,12 @@ export class ProjectService {
     private ngForageFactory: InstanceFactory
   ) {}
 
-  save(project: Project): Observable<Project> {
+  async save(project: Project): Promise<Project> {
     let instance = this.ngForageFactory.getInstance({});
-    let nextIndex = instance.length;
-    instance.setItem<Project>(nextIndex.toString(), project);
-    return instance.getItem(nextIndex.toString()) as unknown as Observable<Project>;
+    let length = await instance.length();
+    console.log(project);
+    let savedProject = await instance.setItem<Project>(length.toString(), project);
+    return savedProject;
   }
 
   get(id: number): Observable<Project> {
