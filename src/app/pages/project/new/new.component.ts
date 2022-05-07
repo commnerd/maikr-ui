@@ -23,10 +23,11 @@ export class NewComponent implements OnInit {
     private projectService: ProjectService) { }
 
   ngOnInit(): void {
+    let project = this.projectService.get(0);
   }
 
   onSubmit(project: Project){
-
+    this.projectService.save(project);
   }
 
 }
