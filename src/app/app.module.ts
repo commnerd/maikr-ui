@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 import { ProjectComponent } from '@pages/project/project.component';
 import { NewComponent } from './pages/project/new/new.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { StorageModule } from '@services/storage/storage.module';
 
 @NgModule({
   declarations: [
@@ -27,8 +26,7 @@ import { StorageModule } from '@services/storage/storage.module';
     MatButtonModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    StorageModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
