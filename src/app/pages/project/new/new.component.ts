@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 import { Project } from '@models/project';
 import { Router } from '@angular/router';
+import { ProjectService } from '@services/project.service';
 
 @Component({
   selector: 'app-new',
@@ -20,16 +21,16 @@ export class NewComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private router: Router) { }
+    private router: Router,
+    private projectService: ProjectService
+  ) { }
 
   ngOnInit(): void {
   }
 
-  onSubmit(project: Project){
-    let proj = new Project(project);
-    project.save().finally(() => {
-      this.router.navigate(["projects"])
-    });
+  onSubmit(formData: {[_: string]: any}){
+    let project: any = this.projectService.get(formData);
+    project.save();
   }
 
 }

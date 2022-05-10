@@ -1,6 +1,6 @@
 import { Model } from 'maikr-js-offline-orm/src/model';
-
-export class Project extends Model {
+@Model
+export class Project {
     name: string = "";
     description: string = "";
 }
