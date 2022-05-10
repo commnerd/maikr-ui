@@ -1,4 +1,4 @@
-# Maikr (Beta)
+# Maikr UI (Beta)
 
 Maikr is a completely open source multi-fasceted project management tool intended to be a dashboard for your life!
 
