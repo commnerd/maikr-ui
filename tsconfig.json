@@ -23,9 +23,13 @@
       "dom"
     ],
     "paths": {
-      "@models/*": ["src/app/models/*"],
+      "@models/*": [
+        "src/app/models/*",
+        "node_modules/@maikr/lib/models/*"
+      ],
       "@pages/*": ["src/app/pages/*"],
-      "@services/*": ["src/app/services/*"]
+      "@services/*": ["src/app/services/*"],
+      "@lib/*": ["node_modules/@maikr/lib/*"]
     }
   },
   "angularCompilerOptions": {
