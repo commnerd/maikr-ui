@@ -24,7 +24,6 @@
     ],
     "paths": {
       "@models/*": [
-        "src/app/models/*",
         "node_modules/@maikr/lib/models/*"
       ],
       "@pages/*": ["src/app/pages/*"],
